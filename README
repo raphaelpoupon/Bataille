@@ -1,0 +1,25 @@
+Ce package permet l'exécution d'une bataille de carte, de la création des joueurs jusqu'à l'annonce des résultats. Aucune interaction n'est possible après le lancement du programme
+
+
+
+UTILISATION
+
+Une fois le programme exécuté, tout se déroule automatiquement, les règles de la Bataille sont les suivantes :
+
+- Deux joueurs sont créés à partir des noms inscrits au sein du programme
+- Un paquet de carte est créé puis mélangé
+- Ce paquet est distribué aux deux joueurs une carte après l'autre
+- La partie peut commencer, les deux joueurs vont poser à chaque tour une carte sur la table, celui qui a posé la carte avec la plus grande valeur remporte le tour, et son nombre de points est incrémenté de la sommes des valeurs des deux cartes. Les deux cartes sont mises de côté
+- Le jeu se termine lorsque toutes les cartes ont été posées. Avec un paquet de 52 cartes, il y a donc 26 tours.
+- L'annonce des résultats est faites
+
+PS : Cette version du programme va exécuter des Batailles jusqu'à ce que les deux joueurs arrivent à égalité, pour ensuite afficher le nombre de partie nécessaire afin d'atteindre ce résultat.
+
+
+
+ORGANISATION DU PROGRAMME
+
+Le programme est constitué de 3 classes : 
+- Bataille contenant le main, ainsi que plusieurs autres méthodes permettant la gestion de la partie
+- Carte contenant la valeur et la couleur de la carte, ainsi qu'une méthode toString() permettant une représentation texte de la carte, et une méthode statique play() responsable du tirage et de l'ajout des points.
+- Joueur contenant toutes les informations et les méthodes gérant le paquet de carte du joueur ainsi que son nombre de points.
